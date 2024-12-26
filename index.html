@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math expression</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Assignment Six</h1>
+    <script>
+        let a = 11    //10   0      9     20     10
+        document.write(--a - a-- + a++ + ++a - --a)
+
+        let b = 2
+        document.write('<br>')
+        document.write("b is " + b)
+
+        let c = 1
+        document.write('<br>')
+        document.write("c is " + c)
+
+        document.write('<br>')
+        document.write('Result is ')
+        //               1    1     2    3
+        document.write(--b - --c + ++c + c--)
+
+        let userName = prompt("please enter your name")
+        document.write(`<h1> ${userName}! Welcome to our website</h1>`);
+
+        let userinp = +prompt('enter a number five');
+
+        let number = 5
+
+
+        if (userinp === number) {
+            document.write("5 x 1 = 5<br>");
+            document.write("5 x 2 = 10<br>");
+            document.write("5 x 3 = 15<br>");
+            document.write("5 x 4 = 20<br>");
+            document.write("5 x 5 = 25<br>");
+            document.write("5 x 6 = 30<br>");
+            document.write("5 x 7 = 35<br>");
+            document.write("5 x 8 = 40<br>");
+            document.write("5 x 9 = 45<br>");
+            document.write("5 x 10 = 50<br>");
+        } else {
+            document.write('wrong number');
+        }
+
+        let result = prompt('Enter your subject name \n start capital')
+
+        let totalMarks = 100;
+        let obtainedMarks = 54;
+        let percentage = '54%'
+        let lastMarks = 48;
+        let subject = 'Urdu, English, Math'
+
+        if (result === 'Urdu') {
+            document.write(`<table>
+            <tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th> <th>Percentage</th></tr> 
+            <tr><td>Urdu:</td><td>${totalMarks}</td><td>${obtainedMarks}</td><td>${percentage}</td></tr>
+            </table>`)
+        } else if (result === 'English') {
+            document.write(`<table>
+            <tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th> <th>Percentage</th></tr> 
+            <tr><td>English:</td><td>${totalMarks}</td><td>${obtainedMarks}</td><td>${percentage}</td></tr>
+            </table>`)
+        } else if (result === 'Math') {
+            document.write(`<table>
+            <tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th> <th>Percentage</th></tr> 
+            <tr><td>Math:</td><td>${totalMarks}</td><td>${lastMarks}</td><td>${percentage}</td></tr>
+            </table>`)
+        }
+        else {
+            document.write('wrong subject')
+        }
+
+
+    </script>
+</body>
+
+</html>
